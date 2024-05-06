@@ -82,20 +82,11 @@ public class Main {
         double guardaValor = valor.nextDouble();
 
         //Aqui ele pega a opção informada e decide o que será impresso de acordo com o que foi escolhido.
-        if (guardaOpcao == 1) {
+        if (guardaOpcao != 7) {
             System.out.println("O resultado do valor: " + guardaValor + " para a conversão de " + baseCode + " para " + targetCode + " é " + conversoes.calculateConversionResult(guardaValor, responseObj.getConversion_rate()));
-        } else if (guardaOpcao == 2) {
-            System.out.println("O resultado da conversão de " + baseCode + " para " + targetCode + " é " + conversoes.calculateConversionResult(guardaValor, responseObj.getConversion_rate()));
-        } else if (guardaOpcao == 3) {
-            System.out.println("O resultado da conversão de " + baseCode + " para " + targetCode + " é " + conversoes.calculateConversionResult(guardaValor, responseObj.getConversion_rate()));
-        } else if (guardaOpcao == 4) {
-            System.out.println("O resultado da conversão de " + baseCode + " para " + targetCode + " é " + conversoes.calculateConversionResult(guardaValor, responseObj.getConversion_rate()));
-        } else if (guardaOpcao == 5) {
-            System.out.println("O resultado da conversão de " + baseCode + " para " + targetCode + " é " + conversoes.calculateConversionResult(guardaValor, responseObj.getConversion_rate()));
-        } else if (guardaOpcao == 6) {
-            System.out.println("O resultado da conversão de " + baseCode + " para " + targetCode + " é " + conversoes.calculateConversionResult(guardaValor, responseObj.getConversion_rate()));
-        }
+      
 
 
     }
+}
 }
